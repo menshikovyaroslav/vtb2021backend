@@ -4,5 +4,16 @@
         <name>vtb_api</name>
     </assembly>
     <members>
+        <member name="T:vtb_api.Classes.AllowCrossSiteJson">
+            <summary>
+            Аттрибут для фронтенда
+            </summary>
+        </member>
+        <member name="M:vtb_api.Classes.AllowCrossSiteJson.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Переопределен метод для добавления заголовка
+            </summary>
+            <param name="filterContext"></param>
+        </member>
     </members>
 </doc>
