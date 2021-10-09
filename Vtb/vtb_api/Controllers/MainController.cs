@@ -9,9 +9,10 @@ using vtb_api.Classes;
 
 namespace vtb_api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class MainController : ControllerBase
+    /// <summary>
+    /// Основной контроллер API
+    /// </summary>
+    public class MainController : Controller
     {
         [Route("api/getdatasets")]
         [EnableCors(origins: "http://localhost", headers: "*", methods: "*")]
@@ -19,9 +20,9 @@ namespace vtb_api.Controllers
         [HttpGet]
         public ActionResult<string> GetDatasets()
         {
+            var result = new List<string>() { "tst"};
 
-
-            return Ok("success");
+            return Ok(result);
         }
     }
 }

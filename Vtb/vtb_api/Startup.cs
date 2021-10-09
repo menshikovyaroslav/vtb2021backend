@@ -57,9 +57,6 @@ namespace vtb_api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "SecurityBand VtbHack2021 Api");
             });
 
-
-            app.UseHttpsRedirection();
-
             app.UseRouting();
 
             app.UseAuthorization();
