@@ -48,9 +48,29 @@
         </member>
         <member name="M:vtb_api.Data.DataBase.GetDatasets">
             <summary>
-            Получить список регионов
+            Получить список датасетов
             </summary>
             <returns></returns>
+        </member>
+        <member name="T:vtb_api.Models.WorkDataset">
+            <summary>
+            Модель объекта датасета
+            </summary>
+        </member>
+        <member name="P:vtb_api.Models.WorkDataset.Id">
+            <summary>
+            Id датасета
+            </summary>
+        </member>
+        <member name="P:vtb_api.Models.WorkDataset.Name">
+            <summary>
+            Название датасета
+            </summary>
+        </member>
+        <member name="P:vtb_api.Models.WorkDataset.Description">
+            <summary>
+            Описание датасета
+            </summary>
         </member>
     </members>
 </doc>
