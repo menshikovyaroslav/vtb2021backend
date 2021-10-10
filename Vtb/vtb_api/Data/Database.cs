@@ -39,5 +39,27 @@ namespace vtb_api.Data
 
             return result;
         }
+
+        /// <summary>
+        /// Получить датасет по его Id
+        /// </summary>
+        /// <returns></returns>
+        public static WorkDataset GetDatasetById(int id)
+        {
+            var result = new WorkDataset();
+            try
+            {
+                using (var db = new BackendDb(new DbContextOptionsBuilder<BackendDb>().UseNpgsql(connString).Options))
+                {
+                    result = db.Datasets.Single(el => el.Id == id);
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Instance.Error(2, ex.Message);
+            }
+
+            return result;
+        }
     }
 }

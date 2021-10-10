@@ -32,8 +32,8 @@ namespace vtb_api.Controllers
         [HttpGet]
         public ActionResult<string> GetDatasetById(int id)
         {
-            //var dataset = DataBase.GetDatasets();
-            return Ok(new WorkDataset());
+            var dataset = DataBase.GetDatasetById(id);
+            return Ok(dataset);
         }
     }
 }
