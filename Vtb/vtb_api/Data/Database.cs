@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using vtb_api.Classes;
 using vtb_api.Models;
 
 namespace vtb_api.Data
@@ -33,7 +34,7 @@ namespace vtb_api.Data
             }
             catch (Exception ex)
             {
-                //Log.Instance.Error(1, ex.Message);
+                Log.Instance.Error(1, ex.Message);
             }
 
             return result;

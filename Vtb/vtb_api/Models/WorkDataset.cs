@@ -28,6 +28,6 @@ namespace vtb_api.Models
         /// Описание датасета
         /// </summary>
         [Column("description")]
-        public List<string> Description { get; set; }
+        public string Description { get; set; }
     }
 }

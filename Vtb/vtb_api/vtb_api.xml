@@ -15,6 +15,46 @@
             </summary>
             <param name="filterContext"></param>
         </member>
+        <member name="T:vtb_api.Classes.Log">
+            <summary>
+            Класс - логгер. Паттерн одиночка. Пишет инфо и ошибки в файлы в папку Log
+            </summary>
+        </member>
+        <member name="P:vtb_api.Classes.Log.CurrentDirectory">
+            <summary>
+            Директория где выполняется приложение
+            </summary>
+        </member>
+        <member name="P:vtb_api.Classes.Log.LogDirectory">
+            <summary>
+            Директория для записи логов
+            </summary>
+        </member>
+        <member name="P:vtb_api.Classes.Log.Instance">
+            <summary>
+            Реализация Одиночки
+            </summary>
+        </member>
+        <member name="M:vtb_api.Classes.Log.Error(System.Int32,System.String)">
+            <summary>
+            Публичный метод для записи ошибок
+            </summary>
+            <param name="errorNumber"></param>
+            <param name="errorText"></param>
+        </member>
+        <member name="M:vtb_api.Classes.Log.Info(System.String)">
+            <summary>
+            Публичный метод для записи дебаг информации
+            </summary>
+            <param name="log"></param>
+        </member>
+        <member name="M:vtb_api.Classes.Log.Add(System.String,System.String)">
+            <summary>
+            Запись собранной информации в файл
+            </summary>
+            <param name="log"></param>
+            <param name="logLevel"></param>
+        </member>
         <member name="T:vtb_api.Controllers.MainController">
             <summary>
             Основной контроллер API
