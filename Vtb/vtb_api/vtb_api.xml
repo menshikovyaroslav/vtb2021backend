@@ -15,5 +15,42 @@
             </summary>
             <param name="filterContext"></param>
         </member>
+        <member name="T:vtb_api.Controllers.MainController">
+            <summary>
+            Основной контроллер API
+            </summary>
+        </member>
+        <member name="T:vtb_api.Data.BackendDb">
+            <summary>
+            Контест для работы с БД
+            </summary>
+        </member>
+        <member name="P:vtb_api.Data.BackendDb.Datasets">
+            <summary>
+            Данные всех  датасетов
+            </summary>
+        </member>
+        <member name="M:vtb_api.Data.BackendDb.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{vtb_api.Data.BackendDb})">
+            <summary>
+            Инициализация контекста работы с БД
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:vtb_api.Data.DataBase">
+            <summary>
+            Класс для выполнения запросов в БД
+            </summary>
+        </member>
+        <member name="F:vtb_api.Data.DataBase.connString">
+            <summary>
+            Строка подключения к БД. Сервер находится в локальной сети, поэтому в настройки не вынесено. Надеюсь не страшно )
+            </summary>
+        </member>
+        <member name="M:vtb_api.Data.DataBase.GetDatasets">
+            <summary>
+            Получить список регионов
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>
